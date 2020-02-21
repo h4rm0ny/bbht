@@ -41,6 +41,7 @@ ENV PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 RUN pip install awscli
 
 # Aquatone
+RUN go get moul.io/http2curl
 RUN go get github.com/michenriksen/aquatone
 
 # JSParser
